@@ -81,9 +81,22 @@
           >
             <button
               type="button"
-              class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white"
+              class="group leading-6 font-medium flex items-center space-x-3 sm:space-x-4 hover:text-gray-600 transition-colors duration-200 w-full py-2"
             >
-              <img src="./assets/search.svg" class="h-5 w-5" />
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                class="text-gray-400 group-hover:text-gray-500 transition-colors duration-200"
+              >
+                <path
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg
+              >
             </button>
           </div>
         </div>
@@ -116,7 +129,9 @@
         </h1>
 
         <!--In evidenza-->
-        <div class="px-4 py-6 sm:px-0">
+        <div
+          class="bg-gray-900 bg-opacity-25 p-8 mt-5 rounded-md drop-shadow-lg"
+        >
           <h3 class="text-xl font-sans text-gray-300">In evidenza</h3>
           <div class="sm:grid grid-cols-2 gap-10 items-center mt-3">
             <div
@@ -126,7 +141,7 @@
                 src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/918-bljqHE1PFArH.jpg"
                 class="rounded-t-lg"
               />
-              <div class="container  p-5">
+              <div class="container cursor-pointer p-5">
                 <dt class="font-medium md:text-4xl	text-white text-center">
                   Gintama
                 </dt>
@@ -136,7 +151,7 @@
               </div>
             </div>
             <div
-              class="container mx-auto filter drop-shadow-lg bg-gray-900 rounded-lg hover:bg-gray-700"
+              class="container cursor-pointer mx-auto filter drop-shadow-lg bg-gray-900 rounded-lg hover:bg-gray-700"
             >
               <img
                 src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/918-bljqHE1PFArH.jpg"
@@ -155,79 +170,73 @@
         </div>
 
         <!--Continua a guardare-->
-        <div class="px-4 py-6 sm:px-0">
+
+        <div
+          class="bg-gray-900 bg-opacity-25 p-8 mt-10 rounded-md drop-shadow-lg"
+        >
           <h3 class="text-xl font-sans text-gray-300">Continua a guardare</h3>
-          <div class="sm:grid grid-cols-4 gap-6 items-center mt-3">
+          <div class="sm:grid grid-cols-4 gap-10 items-center mt-3">
+            <div class="cursor-pointer container mx-auto filter drop-shadow-lg">
+              <img
+                src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112667-GYFeAlZ38mXK.jpg"
+                class="rounded-t-lg "
+              />
+              <div class="container">
+                <a
+                  class="py-3 px-6 w-full flex items-center justify-center text-base font-medium rounded-b-lg text-indigo-100 bg-indigo-900 hover:bg-indigo-800  md:py-4 md:text-lg md:px-10"
+                  >Riprendi</a
+                >
+              </div>
+            </div>
+
             <div
-              class="container mx-auto filter drop-shadow-lg bg-gray-900 rounded-lg hover:bg-gray-700 "
+              class="cursor-pointer container mx-auto filter drop-shadow-lg bg-gray-900 rounded-lg hover:bg-gray-700 "
             >
               <img
-                src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/918-bljqHE1PFArH.jpg"
-                class="rounded-t-lg"
+                src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112667-GYFeAlZ38mXK.jpg"
+                class="rounded-t-lg "
               />
-              <div class="container  p-5">
-                <dt class="font-medium sm:text-4xl	text-white text-center">
-                  Gintama
-                </dt>
-                <dd class="mt-2 text-sm text-gray-500 text-center">
-                  Designed by Good Goods, Inc.
-                </dd>
+              <div class="container">
+                <a
+                  class="py-3 px-6 w-full flex items-center justify-center text-base font-medium rounded-b-lg text-indigo-100 bg-indigo-900 hover:bg-indigo-800  md:py-4 md:text-lg md:px-10"
+                  >Riprendi</a
+                >
               </div>
             </div>
             <div
-              class="container mx-auto filter drop-shadow-lg bg-gray-900 rounded-lg hover:bg-gray-700"
+              class="cursor-pointer container mx-auto filter drop-shadow-lg bg-gray-900 rounded-lg hover:bg-gray-700 "
             >
               <img
-                src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/918-bljqHE1PFArH.jpg"
-                class="rounded-t-lg"
+                src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112667-GYFeAlZ38mXK.jpg"
+                class="rounded-t-lg "
               />
-              <div class="container  p-5">
-                <dt class="font-medium sm:text-4xl	text-white text-center">
-                  Gintama
-                </dt>
-                <dd class="mt-2 text-sm text-gray-500 text-center">
-                  Designed by Good Goods, Inc.
-                </dd>
+              <div class="container">
+                <a
+                  class="py-3 px-6 w-full flex items-center justify-center text-base font-medium rounded-b-lg text-indigo-100 bg-indigo-900 hover:bg-indigo-800  md:py-4 md:text-lg md:px-10"
+                  >Riprendi</a
+                >
               </div>
             </div>
             <div
-              class="container mx-auto filter drop-shadow-lg bg-gray-900 rounded-lg hover:bg-gray-700 "
+              class="cursor-pointer container mx-auto filter drop-shadow-lg bg-gray-900 rounded-lg hover:bg-gray-700 "
             >
               <img
-                src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/918-bljqHE1PFArH.jpg"
-                class="rounded-t-lg"
+                src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112667-GYFeAlZ38mXK.jpg"
+                class="rounded-t-lg "
               />
-              <div class="container  p-5">
-                <dt class="font-medium sm:text-4xl	text-white text-center">
-                  Gintama
-                </dt>
-                <dd class="mt-2 text-sm text-gray-500 text-center">
-                  Designed by Good Goods, Inc.
-                </dd>
+              <div class="container">
+                <a
+                  class="py-3 px-6 w-full flex items-center justify-center text-base font-medium rounded-b-lg text-indigo-100 bg-indigo-900 hover:bg-indigo-800  md:py-4 md:text-lg md:px-10"
+                  >Riprendi</a
+                >
               </div>
             </div>
-            <div
-              class="container mx-auto filter drop-shadow-lg bg-gray-900 rounded-lg hover:bg-gray-700 "
-            >
-              <img
-                src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/918-bljqHE1PFArH.jpg"
-                class="rounded-t-lg"
-              />
-              <div class="container  p-5">
-                <dt class="font-medium sm:text-4xl	text-white text-center">
-                  Gintama
-                </dt>
-                <dd class="mt-2 text-sm text-gray-500 text-center">
-                  Designed by Good Goods, Inc.
-                </dd>
-              </div>
-            </div>
-            
           </div>
         </div>
       </div>
     </main>
   </div>
+
 </template>
 
 <script>
