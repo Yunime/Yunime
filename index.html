@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="./styles.css" rel="stylesheet" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <title>Yunime</title>
+</head>
+
+<body class="bg-gray-800">
+  <div class="relative">
+    <header>
+
+      <!--Navbar-->
+      <nav class="bg-gray-900">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="flex-1 flex items-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                <img class="block lg:hidden h-10 w-auto" src="./assets/logo.svg" alt="Yunime" />
+                <img class="hidden lg:block h-10 w-auto" src="./assets/logo.svg" alt="Yunime" />
+              </div>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <a href="#" class="
+                    bg-gray-900
+                    text-white
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  " aria-current="page">Home</a>
+
+                  <a href="#" class="
+                    text-gray-300
+                    hover:bg-gray-700 hover:text-white
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  ">Browse</a>
+                </div>
+              </div>
+            </div>
+            <div class="
+              absolute
+              inset-y-0
+              right-0
+              flex
+              items-center
+              pr-2
+              sm:static sm:inset-auto sm:ml-6 sm:pr-0
+            ">
+              <button type="button" class="
+                group
+                leading-6
+                font-medium
+                flex
+                items-center
+                space-x-3
+                sm:space-x-4
+                hover:text-gray-600
+                transition-colors
+                duration-200
+                w-full
+                py-2
+              " id="search_btn">
+                <svg width="24" height="24" fill="none" class="
+                  text-gray-400
+                  group-hover:text-gray-500
+                  transition-colors
+                  duration-200
+                ">
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#" class="
+              bg-gray-900
+              text-white
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+            " aria-current="page">Home</a>
+
+            <a href="#" class="
+              text-gray-300
+              hover:bg-gray-700 hover:text-white
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+            ">Browse</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--Search Bar-->
+      <div class="fixed z-50 inset-0 overflow-y-hidden h-screen w-screen hidden" aria-labelledby="Cerca nel sito" role="dialog"
+        aria-modal="true">
+        <div class="flex items-start justify-center pt-12 text-center min-h-screen sm:block sm:p-0">
+          <div
+            class="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-20 dark:bg-white transition-opacity cursor-pointer"
+            aria-hidden="true" style=""></div> <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+            aria-hidden="true">​</span>
+          <div
+            class="inline-block bg-white dark:bg-scuro rounded-xl overflow-hidden shadow-xl transform transition-all text-base px-2 py-2 sm:my-28 sm:max-w-lg sm:w-full w-screen mx-8 align-top"
+            style="">
+            <div class="p-4 sm:p-6 sm:pb-4">
+              <div class="border-b border-gray-200 pb-5 dark:border-gray-600">
+                <div class="mt-3 flex items-center justify-between">
+                  <div class="flex items-center space-x-4 w-full"><svg fill="currentcolor"
+                      class="dark:text-gray-200 stroke-current stroke-2" width="22" height="22" viewBox="0 0 128 128">
+                      <path
+                        d="m120.8 117.2-40-40c6.7-7.5 10.8-17.4 10.8-28.2C91.5 25.6 72.4 6.5 49 6.5S6.5 25.6 6.5 49 25.6 91.5 49 91.5c10.8 0 20.7-4.1 28.2-10.8l40 40c.5.5 1.1.7 1.8.7s1.3-.2 1.8-.7c.9-.9.9-2.5 0-3.5zM11.5 49c0-20.7 16.8-37.5 37.5-37.5S86.5 28.3 86.5 49 69.7 86.5 49 86.5 11.5 69.7 11.5 49z">
+                      </path>
+                      <path
+                        d="M74 51.5c-1.4 0-2.5-1.1-2.5-2.5 0-12.4-10.1-22.5-22.5-22.5-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5c15.2 0 27.5 12.3 27.5 27.5 0 1.4-1.1 2.5-2.5 2.5z">
+                      </path>
+                    </svg> <input autocomplete="off" type="search" placeholder="Cerca nel sito"
+                      class="focus:outline-none focus:placeholder-opacity-50 placeholder-gray-500 text-gray-600 w-[80%] dark:bg-scuro dark:text-gray-200 dark:placeholder-gray-400 bg-white">
+                  </div> <button tabindex="-1" aria-label="Chiudi"
+                    class="text-[.725rem] text-gray-400 border border-gray-300 bg-gray-50 rounded-lg py-0 px-2 hover:text-gray-500 hover:shadow-inner focus:outline-none focus:shadow-inner focus:text-gray-500 transition duration-300 dark:bg-nero dark:border-gray-600 dark:hover:border-gray-500 dark:hover:text-gray-300">esc</button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white px-3 py-2 sm:px-6 flex flex-col mb-1 dark:bg-scuro">
+              <p class="dark:text-gray-400">Scrivi, usa le frecce, premi INVIO.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+
+    <!--Content-->
+    <main>
+      <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-semibold text-gray-200">Bentornato!</h1>
+
+        <!--In evidenza-->
+        <div class="bg-gray-900 bg-opacity-25 p-8 mt-5 rounded-md drop-shadow-lg">
+          <h3 class="text-xl font-sans text-gray-300">In evidenza</h3>
+          <div class="sm:grid grid-cols-2 gap-10 items-center mt-3">
+            <div class="
+                    container
+                    mx-auto
+                    filter
+                    drop-shadow-lg
+                    bg-gray-900
+                    rounded-lg
+                    hover:bg-gray-700
+                  ">
+              <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/918-bljqHE1PFArH.jpg"
+                class="rounded-t-lg" />
+              <div class="container cursor-pointer p-5">
+                <dt class="font-medium sm:text-4xl text-white text-center">
+                  Gintama
+                </dt>
+                <dd class="mt-2 text-sm text-gray-500 text-center">
+                  Designed by Good Goods, Inc.
+                </dd>
+              </div>
+            </div>
+            <div class="
+                    container
+                    cursor-pointer
+                    mx-auto
+                    filter
+                    drop-shadow-lg
+                    bg-gray-900
+                    rounded-lg
+                    hover:bg-gray-700
+                    sm:mt-0
+                    mt-16
+                  ">
+              <img src="https://s4.anilist.co/file/anilistcdn/media/anime/banner/918-bljqHE1PFArH.jpg"
+                class="rounded-t-lg" />
+              <div class="container p-5">
+                <dt class="font-medium sm:text-4xl text-white text-center">
+                  Gintama
+                </dt>
+                <dd class="mt-2 text-sm text-gray-500 text-center">
+                  Designed by Good Goods, Inc.
+                </dd>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Continua a guardare-->
+
+        <div class="
+                bg-gray-900 bg-opacity-25
+                p-8
+                mt-10
+                rounded-md
+                drop-shadow-lg
+              ">
+          <h3 class="text-xl font-sans text-gray-300">Continua a guardare</h3>
+          <div class="sm:grid grid-cols-4 gap-10 items-center mt-3">
+            <div class="cursor-pointer container mx-auto filter drop-shadow-lg">
+              <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112667-GYFeAlZ38mXK.jpg"
+                class="rounded-t-lg" />
+              <div class="container">
+                <a class="
+                        py-3
+                        px-6
+                        w-full
+                        flex
+                        items-center
+                        justify-center
+                        text-base
+                        font-medium
+                        rounded-b-lg
+                        text-indigo-100
+                        bg-indigo-900
+                        hover:bg-indigo-800
+                        md:py-4 md:text-lg md:px-10
+                      ">Riprendi</a>
+              </div>
+            </div>
+
+            <div class="
+                    cursor-pointer
+                    container
+                    mx-auto
+                    filter
+                    drop-shadow-lg
+                    bg-gray-900
+                    rounded-lg
+                    hover:bg-gray-700
+                  ">
+              <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112667-GYFeAlZ38mXK.jpg"
+                class="rounded-t-lg" />
+              <div class="container">
+                <a class="
+                        py-3
+                        px-6
+                        w-full
+                        flex
+                        items-center
+                        justify-center
+                        text-base
+                        font-medium
+                        rounded-b-lg
+                        text-indigo-100
+                        bg-indigo-900
+                        hover:bg-indigo-800
+                        md:py-4 md:text-lg md:px-10
+                      ">Riprendi</a>
+              </div>
+            </div>
+            <div class="
+                    cursor-pointer
+                    container
+                    mx-auto
+                    filter
+                    drop-shadow-lg
+                    bg-gray-900
+                    rounded-lg
+                    hover:bg-gray-700
+                  ">
+              <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112667-GYFeAlZ38mXK.jpg"
+                class="rounded-t-lg" />
+              <div class="container">
+                <a class="
+                        py-3
+                        px-6
+                        w-full
+                        flex
+                        items-center
+                        justify-center
+                        text-base
+                        font-medium
+                        rounded-b-lg
+                        text-indigo-100
+                        bg-indigo-900
+                        hover:bg-indigo-800
+                        md:py-4 md:text-lg md:px-10
+                      ">Riprendi</a>
+              </div>
+            </div>
+            <div class="
+                    cursor-pointer
+                    container
+                    mx-auto
+                    filter
+                    drop-shadow-lg
+                    bg-gray-900
+                    rounded-lg
+                    hover:bg-gray-700
+                  ">
+              <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112667-GYFeAlZ38mXK.jpg"
+                class="rounded-t-lg" />
+              <div class="container">
+                <a class="
+                        py-3
+                        px-6
+                        w-full
+                        flex
+                        items-center
+                        justify-center
+                        text-base
+                        font-medium
+                        rounded-b-lg
+                        text-indigo-100
+                        bg-indigo-900
+                        hover:bg-indigo-800
+                        md:py-4 md:text-lg md:px-10
+                      ">Riprendi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </main>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+  <script src="./background.js"></script>
+</body>
+
+</html>
