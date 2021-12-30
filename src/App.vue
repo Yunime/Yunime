@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<template>
+  <!DOCTYPE html>
 <html>
 
 <head>
@@ -9,7 +10,8 @@
   <script src="https://unpkg.com/vue"></script>
 
 </head>
-
+<img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
 <body class="bg-gray-800" id="app">
   <div class="relative">
     <header>
@@ -296,3 +298,27 @@
 </body>
 
 </html>
+</template>
+
+<script>
+import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'Yunime',
+  components: {
+    HelloWorld
+  }
+}
+
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
