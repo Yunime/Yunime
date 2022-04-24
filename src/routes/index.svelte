@@ -1,11 +1,9 @@
-<script>
-  import Search from "./Search.svelte";
-
+<script >
   let searchQuery = "";
   let isLoading = false;
+  let data;
 
   function handleSubmit() {
-
     if (!searchQuery) return;
 
     searchUnsplash();
@@ -52,12 +50,30 @@
         }),
       };
     let response = await fetch(url, options);
-    console.log(response);
+    data = await response.json();
+    /*data.data.Page.media.forEach(element => {
+      console.log(element.title.romaji);
+    });*/
   }
-</script>
+  
+  </script>
 
 <main class="App">
-  <h1>Unsplash Search App</h1>
-
-  <Search bind:query={searchQuery} {handleSubmit} />
+  <h1 class="font-bold text-4xl">yunime :)</h1>
+  <form class="search-form" on:submit|preventDefault={handleSubmit}>
+    <input
+      bind:value={searchQuery}
+      class="search-input"
+      type="search"
+      placeholder="Search Unsplash's library of over 1 million photos"
+    />
+  </form>
+  <!--
+  {#each data.data.Page.media as result (result.element.title.romaji)}
+    <ul class="search-results">
+      <li class="photo-card">
+        <a href="#" rel="noopener noreferrer" target="_blank"> {result}</a>
+      </li>
+    </ul>
+  {/each}-->  
 </main>

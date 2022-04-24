@@ -9,27 +9,30 @@
                 "perPage": 3
             },
             "media": [{
-                "id": 30013,
-                "title": {
-                    "romaji": "ONE PIECE"
+                    "id": 30013,
+                    "title": {
+                        "romaji": "ONE PIECE"
+                    },
+                    "episodes": null,
+                    "popularity": 104083
                 },
-                "episodes": null,
-                "popularity": 104083
-            }, {
-                "id": 21,
-                "title": {
-                    "romaji": "ONE PIECE"
+                {
+                    "id": 21,
+                    "title": {
+                        "romaji": "ONE PIECE"
+                    },
+                    "episodes": null,
+                    "popularity": 329914
                 },
-                "episodes": null,
-                "popularity": 329914
-            }, {
-                "id": 95552,
-                "title": {
-                    "romaji": "Wan Piece"
-                },
-                "episodes": null,
-                "popularity": 116
-            }]
+                {
+                    "id": 95552,
+                    "title": {
+                        "romaji": "Wan Piece"
+                    },
+                    "episodes": null,
+                    "popularity": 116
+                }
+            ]
         }
     }
 }
